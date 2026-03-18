@@ -16,11 +16,10 @@ namespace DeepLearn {
 		uint32_t cols;
 	
 		std::ifstream file;
-	public:
-		MnistLoader();
 		uint32_t swapEndian(uint32_t val);
+	public:
+		MnistLoader();		
 		bool LoadMnistFile(const char* path);
-		
 	};
 }
 
